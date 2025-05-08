@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document Upload</title>
+</head>
+<body>
+  <h2>Verify Document</h2>
+
+  <button onclick="verifyDocument()">Verify</button>
+
+  <pre id="result"></pre>
+
+  <script>
+    async function verifyDocument() {
+      const token = localStorage.getItem("token");  // Assuming you store token after login
+
+      const response = await fetch("http://localhost:5000/verify-document", {
+        method: "GET",
+        headers: {
+          "Authorization": "Bearer " + token
+        }
+      });
+
+      const data = await response.json();
+      document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

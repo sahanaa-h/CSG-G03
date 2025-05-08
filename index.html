@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DocVerific - Document Verification</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo"/>
+            <h1>DocVerific</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#verify">Verify</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Secure, Fast & Accurate Document Verification</h2>
+            <p>Verify your identity documents with confidence. Powered by AI, built for trust.</p>
+            <a href="#verify" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Why Choose DocVerific?</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <h3>AI-Powered Verification</h3>
+                <p>Our system uses machine learning to validate Aadhaar, PAN & more.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-time Processing</h3>
+                <p>Instant feedback with secure data handling.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Privacy First</h3>
+                <p>No third-party sharing. Your data stays with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="verify">
+        <h2>Upload & Verify Your Document</h2>
+        <p>Start by uploading your document. We’ll handle the rest.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="document" accept=".pdf,.jpg,.jpeg,.png,.gif,.bmp" required/>
+            <button type="submit">Verify Document</button>
+        </form>
+
+        <div id="responseMessage"></div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2025 DocVerific | Built by Sahana</p>
+        <p>Email: support@docverific.in</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
